@@ -15,7 +15,9 @@ class HomeView extends GetView<HomeController> {
         centerTitle: true,
       ),
       body:  Center(
-        child: Column(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             ElevatedButton(onPressed: (){Get.toNamed(Routes.BOOK);}
                 , child: Text("Buku")),
